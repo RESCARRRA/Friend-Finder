@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Friend Finder | Survey</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  </script><!-- Glyphicons -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"><!-- Chosen -->
+  <link href="https://cdnjs.cloudfare.com/ajax/libs/chosen/1.5.1/chosen.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudfare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js">
+  </script>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+  body { font-family: 'Comfortaa', cursive; padding: 2.5px;}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="text-center">FRIEND <i class="fa fa-search"></i> FINDER<br>SURVEY</h1>
+<hr>
+      <h3 class="text-center">Complete the <em>Friend Finder</em> survey below!</h3>
+<br>
+      <div class="text-center">
+        <a href="/home"><button class="btn btn-lg btn-default" type="button"><span class="glyphicon glyphicon-home"></span></button></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Survey Page -->
+        <h2>About You</h2>
+        
+          <h3>Your Name </h3><p><em>(required)</em></p>
+          <input class="form-control" id="name" name="" required="" type="text" >
+<br>
+          <h3>PHOTO</h3><p><em> (required)</em></p>
+          <input class="form-control" id="photo" name="" required="" type="text">
+<br>
+<hr>
+          <h3>SURVEY</h3>
+<br>
+          <h4><strong>1.</strong> Gossiping is super lame and disgenuine.</h4>
+          <select class="chosen-select" data-placeholder="" id="Q1">
+            <option value="">
+            </option>
+
+            <option value="1">
+              1 (Strongly Disagree)
+            </option>
+
+            <option value="2">
+              2 (Slightly Disagree)
+            </option>
+
+            <option value="3">
+              3 (Neutral)
+            </option>
+
+            <option value="4">
+              4 (Slightly Disagree)
+            </option>
+
+            <option value="5">
+              5 (Strongly Agree)
+            </option>
+          </select>
+<br><br>
+
+          <h4><strong>2.</strong> Beer is delicious.</h4>
+          <select class="chosen-select" data-placeholder="" id="Q2">
+            <option value="">
+            </option>
+
+            <option value="1">
+              1 (Strongly Disagree)
+            </option>
+
+            <option value="2">
+              2 (Slightly Disagree)
+            </option>
+
+            <option value="3">
+              3 (Neutral)
+            </option>
+
+            <option value="4">
+              4 (Slightly Disagree)
+            </option>
+
+            <option value="5">
+              5 (Strongly Agree)
+            </option>
+          </select>
+<br><br>
+
+          <h4><strong>3.</strong> You love to travel and learn about other cultures.</h4>
+          <select class="chosen-select" data-placeholder="" id="Q3">
+            <option value="">
+            </option>
+
+            <option value="1">
+              1 (Strongly Disagree)
+            </option>
+
+            <option value="2">
+              2 (Slightly Disagree)
+            </option>
+
+            <option value="3">
+              3 (Neutral)
+            </option>
+
+            <option value="4">
+              4 (Slightly Disagree)
+            </option>
+
+            <option value="5">
+              5 (Strongly Agree)
+            </option>
+          </select>
+<br><br>
+          <h4><strong>4.</strong> Trump sucks.</h4>
+          <select class="chosen-select" data-placeholder="" id="Q4">
+            <option value="">
+            </option>
+
+            <option value="1">
+              1 (Strongly Disagree)
+            </option>
+
+            <option value="2">
+              2 (Slightly Disagree)
+            </option>
+
+            <option value="3">
+              3 (Neutral)
+            </option>
+
+            <option value="4">
+              4 (Slightly Disagree)
+            </option>
+
+            <option value="5">
+              5 (Strongly Agree)
+            </option>
+          </select>
+<br><br>
+          <h4><strong>5.</strong>It is important to support and empower those close to you.</h4>
+          <select class="chosen-select" data-placeholder="" id="Q5">
+            <option value="">
+            </option>
+
+            <option value="1">
+              1 (Strongly Disagree)
+            </option>
+
+            <option value="2">
+              2 (Slightly Disagree)
+            </option>
+
+            <option value="3">
+              3 (Neutral)
+            </option>
+
+            <option value="4">
+              4 (Slightly Disagree)
+            </option>
+
+            <option value="5">
+              5 (Strongly Agree)
+            </option>
+          </select>
+<br><br>
+          <h4><strong>6.</strong>You take what you do seriously, but you don't take yourself too seriously.</h4>
+          <select class="chosen-select" data-placeholder="" id="Q6">
+            <option value="">
+            </option>
+
+            <option value="1">
+              1 (Strongly Disagree)
+            </option>
+
+            <option value="2">
+              2 (Slightly Disagree)
+            </option>
+
+            <option value="3">
+              3 (Neutral)
+            </option>
+
+            <option value="4">
+              4 (Slightly Disagree)
+            </option>
+
+            <option value="5">
+              5 (Strongly Agree)
+            </option>
+          </select>
+<br><br>
+          <h4><strong>7.</strong> Reading is sexy.</h4>
+          <select class="chosen-select" data-placeholder="" id="Q7">
+            <option value="">
+            </option>
+
+            <option value="1">
+              1 (Strongly Disagree)
+            </option>
+
+            <option value="2">
+              2 (Slightly Disagree)
+            </option>
+
+            <option value="3">
+              3 (Neutral)
+            </option>
+
+            <option value="4">
+              4 (Slightly Disagree)
+            </option>
+
+            <option value="5">
+              5 (Strongly Agree)
+            </option>
+          </select>
+<br><br>
+          <h4><strong>8.</strong> If you were to be blinded, you'd rather be blinded by science.</h4>
+          <select class="chosen-select" data-placeholder="" id="Q8">
+            <option value="">
+            </option>
+
+            <option value="1">
+              1 (Strongly Disagree)
+            </option>
+
+            <option value="2">
+              2 (Slightly Disagree)
+            </option>
+
+            <option value="3">
+              3 (Neutral)
+            </option>
+
+            <option value="4">
+              4 (Slightly Disagree)
+            </option>
+
+            <option value="5">
+              5 (Strongly Agree)
+            </option>
+          </select>
+<br><br>
+          <h4><strong>9.</strong> Being fiercly loyal is a valuable trait.</h4>
+          <select class="chosen-select" data-placeholder="" id="Q9">
+            <option value="">
+            </option>
+
+            <option value="1">
+              1 (Strongly Disagree)
+            </option>
+
+            <option value="2">
+              2 (Slightly Disagree)
+            </option>
+
+            <option value="3">
+              3 (Neutral)
+            </option>
+
+            <option value="4">
+              4 (Slightly Disagree)
+            </option>
+
+            <option value="5">
+              5 (Strongly Agree)
+            </option>
+          </select>
+<br><br>
+          <h4><strong>10.</strong> Jeff Goldblum was and is a total babe.</h4>
+          <select class="chosen-select" data-placeholder="" id="Q10">
+            <option value="">
+            </option>
+
+            <option value="1">
+              1 (Strongly Disagree)
+            </option>
+
+            <option value="2">
+              2 (Slightly Disagree)
+            </option>
+
+            <option value="3">
+              3 (Neutral)
+            </option>
+
+            <option value="4">
+              4 (Slightly Disagree)
+            </option>
+
+            <option value="5">
+              5 (Strongly Agree)
+            </option>
+          </select>
+<br><br>
+          <button class="btn btn-default" id="submit" type="submit">Submit</button>
+     
+        <br>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p><a href="/api/friends">API Friends List</a>
+      </p>
+    </div>
+  </footer>
+  <!-- Modal -->
+
+
+  <div class="modal fade" id="resultsModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal Content -->
+
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" type="button">&times;</button>
+
+          <h2 class="modal-title"><strong>Best Match</strong>
+          </h2>
+        </div>
+
+
+        <div class="modal-body">
+        <h2 id="matchName">
+        </h2>
+        <img alt="" id="matching" src="https://media.licdn.com/mpr/mpr/skrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg">
+        </div>
+
+
+        <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type = "text/javascript">
+  // Chosen
+  //------------------------------------------------
+  var config = {
+    ".chosen-select": {},
+    ".chosen-select-deselect": {
+      allow_single_deselect: true
+    },
+    ".chosen-select-no-single": {
+      disable_search_threshold: 10
+    },
+    ".chosen-select-no-results": {
+      no_results_text: "Oops, nothing found!"
+    },
+    ".chosen-select-width": {
+      width: "95%"
+    }
+  };
+for (var selector in config) {
+  $(selector).chosen(config[selector]);
+}
+//------------------------------------------------
+// On survey 'submit'
+//------------------------------------------------
+$("#submit").on("click", function() {
+  alert("you cliked submit");
+      event.preventDefault();
+      // Survey validation
+      function validateSurvey() {
+        var valid = true;
+        $(".form-control").each(function() {
+          if ($(this).val() === "") {
+            valid = false;
+          }
+        });
+        $(".chosen-select").each(function() {
+          if ($(this).val() === "") {
+            valid = false;
+          }
+        });
+        return valid;
+      }
+      // If all validation returns valid, proceed to grabbing form data 
+      if (validateSurvey()) {
+        // For each survey complete, the data are grabbed and stored in object userData
+        // and in the $.post below sent to api-routes for comparison to exisiting friend data
+        var userData = {
+          name: $("#name").val().trim(),
+          photo: $("#photo").val().trim(),
+          scores: [
+            $("#Q1").val(),
+            $("#Q2").val(),
+            $("#Q3").val(),
+            $("#Q4").val(),
+            $("#Q5").val(),
+            $("#Q6").val(),
+            $("#Q7").val(),
+            $("#Q8").val(),
+            $("#Q9").val(),
+            $("#Q10").val()
+          ]
+        };
+        // var currentUrl = window.location.origin;
+        $.post("/api/friends", userData, function(data) {
+          $("#matchName").text(data.name);
+          $("#resultsModal").attr("src", data.photo);
+          // Modal presnts best friend match to user
+          $("#matching").modal("toggle");
+          alert("working");
+        });
+      } 
+  </script>
+</html>
