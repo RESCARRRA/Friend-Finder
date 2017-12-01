@@ -36,7 +36,7 @@
       <div class="col-lg-12">
         <!-- Survey Page -->
         <h2>About You</h2>
-        
+      <form role="form">  
           <h3>Your Name </h3><p><em>(required)</em></p>
           <input class="form-control" id="name" name="" required="" type="text" >
 <br>
@@ -310,7 +310,7 @@
 <br><br>
           <button class="btn btn-default" id="submit" type="submit">Submit</button>
      
-        <br>
+        <br></form>
       </div>
     </div>
   </div>
@@ -342,7 +342,7 @@
         <div class="modal-body">
         <h2 id="matchName">
         </h2>
-        <img alt="" id="matching" src="https://media.licdn.com/mpr/mpr/skrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg">
+        <img alt="" id="matchImg" src="">
         </div>
 
 
@@ -417,11 +417,15 @@ $("#submit").on("click", function() {
         };
         // var currentUrl = window.location.origin;
         $.post("/api/friends", userData, function(data) {
-          $("#matchName").text(data.name);
-          $("#resultsModal").attr("src", data.photo);
-          // Modal presnts best friend match to user
-          $("#matching").modal("toggle");
-          alert("working");
+          if(data){
+            alert("working")
+          } else { 
+            alert("not working")
+          };
+          // $("#matchName").text(data.name);
+          // $("#resultsModal").attr("src", data.photo);
+          // // Modal presnts best friend match to user
+          // $("#matchImg").modal("toggle");
         });
       } 
   </script>

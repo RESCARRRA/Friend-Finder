@@ -5,7 +5,7 @@ var app = express();
 var bodyParser = require("body-parser");
 var path = require("path");
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 // EXPRESS CONFIGURATION
 // ==============================================================================
@@ -14,10 +14,12 @@ var PORT = process.env.PORT || 8080;
 
 // Sets up the Express app to handle data parsing (our middleware)
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-app.use(bodyParser.json({ type: 'application/*+json'}));
-app.use(bodyParser.raw({ type: 'application/vnd.custom-type'}));
-app.use(bodyParser.text({ type: 'text/html'}));
+
+// app.use(bodyParser.json({ type: 'application/*+json'}));
+// app.use(bodyParser.raw({ type: 'application/vnd.custom-type'}));
+// app.use(bodyParser.text({ type: 'text/html'}));
 
 
 // ROUTER
@@ -32,4 +34,3 @@ require("./routes/htmlRoutes")(app);
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
 });
-
