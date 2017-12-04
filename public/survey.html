@@ -11,9 +11,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
   </script><!-- Glyphicons -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"><!-- Chosen -->
-  <link href="https://cdnjs.cloudfare.com/ajax/libs/chosen/1.5.1/chosen.css" rel="stylesheet">
+ <!--  <link href="https://cdnjs.cloudfare.com/ajax/libs/chosen/1.5.1/chosen.css" rel="stylesheet">
   <script src="https://cdnjs.cloudfare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js">
-  </script>
+  </script> -->
   <style>
   @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
   body { font-family: 'Comfortaa', cursive; padding: 2.5px;}
@@ -356,24 +356,24 @@
 <script type = "text/javascript">
   // Chosen
   //------------------------------------------------
-  var config = {
-    ".chosen-select": {},
-    ".chosen-select-deselect": {
-      allow_single_deselect: true
-    },
-    ".chosen-select-no-single": {
-      disable_search_threshold: 10
-    },
-    ".chosen-select-no-results": {
-      no_results_text: "Oops, nothing found!"
-    },
-    ".chosen-select-width": {
-      width: "95%"
-    }
-  };
-for (var selector in config) {
-  $(selector).chosen(config[selector]);
-}
+//   var config = {
+//     ".chosen-select": {},
+//     ".chosen-select-deselect": {
+//       allow_single_deselect: true
+//     },
+//     ".chosen-select-no-single": {
+//       disable_search_threshold: 10
+//     },
+//     ".chosen-select-no-results": {
+//       no_results_text: "Oops, nothing found!"
+//     },
+//     ".chosen-select-width": {
+//       width: "95%"
+//     }
+//   };
+// for (var selector in config) {
+//   $(selector).chosen(config[selector]);
+// }
 //------------------------------------------------
 // On survey 'submit'
 //------------------------------------------------
@@ -422,11 +422,12 @@ $("#submit").on("click", function() {
           } else { 
             alert("not working")
           };
-          // $("#matchName").text(data.name);
-          // $("#resultsModal").attr("src", data.photo);
-          // // Modal presnts best friend match to user
-          // $("#matchImg").modal("toggle");
+          $("#matchName").text(data.name);
+          $("#resultsModal").attr("src", data.photo);
+          // Modal presnts best friend match to user
+          $("#matchImg").modal("toggle");
         });
-      } 
+      }      
+});
   </script>
 </html>

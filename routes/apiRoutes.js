@@ -35,7 +35,7 @@ module.exports = function(app) {
       friendDifference: 1000
     };
     
-    console.log(req.body);
+    // console.log(results);
 
     var userData = req.body;
     var userScores = userData.scores;
@@ -64,6 +64,7 @@ module.exports = function(app) {
     friends.push(userData);
 
     res.json(bestFriend);
+    // friends.push(res.json(bestFriend));
   });
 }
     
