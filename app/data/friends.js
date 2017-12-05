@@ -7,23 +7,23 @@
 
 var friends = [
   {
-  name:"Alexander",
-  photo:"https://media.licdn.com/media/p/2/000/1e9/3cd/24e4581.jpg",
+  name:"Ryn",
+  photo:"https://avatars2.githubusercontent.com/u/27320333?s=400&v=4",
   scores:[
       "5",
-      "2",
       "5",
       "5",
       "5",
       "5",
-      "4",
       "5",
-      "4",
-      "1"
+      "5",
+      "5",
+      "5",
+      "5"
     ]
   },
     {
-  name:"Chirstine",
+  name:"Alexander",
   photo:"https://media.licdn.com/media/p/2/000/1e9/3cd/24e4581.jpg",
   scores:[
       "5",
@@ -40,7 +40,7 @@ var friends = [
   },
     {
   name:"Simone",
-  photo:"https://media.licdn.com/media/p/2/000/1e9/3cd/24e4581.jpg",
+  photo:"http://www.animal-photography.com/thumbs/black_longhair_munchkin_on_hin~AP-1C7SDW-TH.jpg",
   scores:[
       "1",
       "5",

@@ -322,37 +322,32 @@
       </p>
     </div>
   </footer>
+
   <!-- Modal -->
-
-
-  <div class="modal fade" id="resultsModal" role="dialog">
+  <div id="resultsModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
+      
       <!-- Modal Content -->
-
-
       <div class="modal-content">
         <div class="modal-header">
-          <button class="close" data-dismiss="modal" type="button">&times;</button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h2 class="modal-title"><strong>Best Match</strong>
-          </h2>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
         </div>
-
 
         <div class="modal-body">
-        <h2 id="matchName">
-        </h2>
-        <img alt="" id="matchImg" src="">
+        <h2 id="matchName"></h2>
+        <h3 id="matchDiff"></h3>
+        
+        <img id="matchImg" src="" alt="Friend Image">
         </div>
 
-
         <div class="modal-footer">
-          <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
-</body>
 <script type = "text/javascript">
   // Chosen
   //------------------------------------------------
@@ -378,7 +373,7 @@
 // On survey 'submit'
 //------------------------------------------------
 $("#submit").on("click", function() {
-  alert("you cliked submit");
+  // alert("you cliked submit");
       // event.preventDefault();
       // Survey validation
       function validateSurvey() {
@@ -420,16 +415,38 @@ $("#submit").on("click", function() {
 
         $.post(currentUrl + "/api/friends", userData, function(data) {
           // if(data){
-            alert("working")
+            
+          //   alert("working");
           // } else { 
           //   alert("not working")
           // };
-          // $("#matchName").text(userData.name);
-          // $("#resultsModal").attr("src", data.photo);
-          // // Modal presnts best friend match to user
-          // $("#matchImg").modal("toggle");
+          $("#matchName").text(userData.name);
+          $("#matchDiff").text(userData.friendDifference);
+          $("#matchImg").attr("src", userData.photo);
+          // Modal presnts best friend match to user
+          $("#resultsModal").modal("toggle");
         });
-      }      
+      }  else {
+        alert("Please fill out all fields before submitting! Thank you :) ");
+      }  
+      return false;
+    // });
+
+        $("#name").val("");
+        $("#photo").val("");
+            $("#Q1").val(""),
+            $("#Q2").val(""),
+            $("#Q3").val(""),
+            $("#Q4").val(""),
+            $("#Q5").val(""),
+            $("#Q6").val(""),
+            $("#Q7").val(""),
+            $("#Q8").val(""),
+            $("#Q9").val(""),
+            $("#Q10").val("")
+
+     
 });
   </script>
+  </body>
 </html>
