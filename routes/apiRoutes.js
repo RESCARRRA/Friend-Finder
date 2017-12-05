@@ -1,4 +1,4 @@
- // ===============================================================================
+  // ===============================================================================
 // LOAD DATA
 // We are linking our routes to a series of "data" sources.
 // These data sources hold arrays of information on table-data, waitinglist, etc.
@@ -28,6 +28,7 @@ module.exports = function(app) {
   // --------------------------------------------------------------------------
 
   app.post("/api/friends", function(req, res) {
+    // friends.push(req.body);
     
     var bestFriend = {
       name: "",
@@ -35,7 +36,7 @@ module.exports = function(app) {
       friendDifference: 1000
     };
     
-    // console.log(results);
+    console.log(req.body);
 
     var userData = req.body;
     var userScores = userData.scores;
@@ -49,7 +50,7 @@ module.exports = function(app) {
       totalDifference = 0;
 
       for (var j = 0; j < friends[i].scores[j]; j++){
-        totalDifference = Math.Abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
+        totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
 
         if (totalDifference <= bestFriend.friendDifference){
 

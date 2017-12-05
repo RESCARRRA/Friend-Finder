@@ -1,4 +1,4 @@
-// ===============================================================================
+ // ===============================================================================
 // DATA
 // Below data will hold all of the reserved tables.
 // Initially we just set it equal to a "dummy" customer.
@@ -7,9 +7,25 @@
 
 var friends = [
   {
-  "name":"Alexander",
-  "photo":"https://media.licdn.com/media/p/2/000/1e9/3cd/24e4581.jpg",
-  "scores":[
+  name:"Alexander",
+  photo:"https://media.licdn.com/media/p/2/000/1e9/3cd/24e4581.jpg",
+  scores:[
+      "5",
+      "2",
+      "5",
+      "5",
+      "5",
+      "5",
+      "4",
+      "5",
+      "4",
+      "1"
+    ]
+  },
+    {
+  name:"Chirstine",
+  photo:"https://media.licdn.com/media/p/2/000/1e9/3cd/24e4581.jpg",
+  scores:[
       "5",
       "5",
       "5",
@@ -20,6 +36,22 @@ var friends = [
       "5",
       "5",
       "5"
+    ]
+  },
+    {
+  name:"Simone",
+  photo:"https://media.licdn.com/media/p/2/000/1e9/3cd/24e4581.jpg",
+  scores:[
+      "1",
+      "5",
+      "5",
+      "5",
+      "5",
+      "3",
+      "5",
+      "2",
+      "5",
+      "1"
     ]
   },
 ];
