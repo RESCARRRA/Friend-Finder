@@ -37,7 +37,7 @@
         <!-- Survey Page -->
         <h2>About You</h2>
 <!--       <form role="form">  
- -->          <h3>Your Name </h3><p><em>(required)</em></p>
+ -->          <h3>NAME </h3><p><em>(required)</em></p>
           <input class="form-control" id="name" name="" required="" type="text" >
 <br>
           <h3>PHOTO</h3><p><em> (required)</em></p>
@@ -332,12 +332,12 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-          <h2 class="modal-title"><strong>Best Match</strong></h2>
+          <h2 class="modal-title"><strong>New Friend</strong></h2>
         </div>
 
         <div class="modal-body">
-        <h2 id="matchName"></h2>
-        <h3 id="matchDiff"></h3>
+        <span>Name: <h2 id="matchName"> </h2></span>
+        <span>Score: <h3 id="matchDiff"></h3></span>
         
         <img id="matchImg" src="" alt="Friend Image">
         </div>
@@ -414,7 +414,7 @@ $("#submit").on("click", function() {
         var currentUrl = window.location.origin;
 
         $.post(currentUrl + "/api/friends", userData, function(data) {
-          // if(data){
+          if(bestFriend){
             
           //   alert("working");
           // } else { 
@@ -425,12 +425,14 @@ $("#submit").on("click", function() {
           $("#matchImg").attr("src", userData.photo);
           // Modal presnts best friend match to user
           $("#resultsModal").modal("toggle");
-        });
+        
       }  else {
         alert("Please fill out all fields before submitting! Thank you :) ");
-      }  
-      return false;
-    // });
+      
+        return false;
+    }
+    }); 
+      };
 
         $("#name").val("");
         $("#photo").val("");
@@ -444,9 +446,9 @@ $("#submit").on("click", function() {
             $("#Q8").val(""),
             $("#Q9").val(""),
             $("#Q10").val("")
+ });
 
      
-});
   </script>
   </body>
 </html>
